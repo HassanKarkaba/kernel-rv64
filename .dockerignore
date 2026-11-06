@@ -1,0 +1,14 @@
+.git
+target
+build
+var
+__pycache__
+**/__pycache__
+**/*.pyc
+.pytest_cache
+.venv
+*.img
+*.log
+*.docx
+.env
+evidence

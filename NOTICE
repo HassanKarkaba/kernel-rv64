@@ -1,0 +1,16 @@
+KERNEL-RV64 source is supplied under the MIT license in LICENSE.
+The workspace uses no third-party Cargo packages.
+
+The toolchain is reconstructed from external projects rather than redistributed
+in this source archive. Rust is distributed under MIT/Apache-2.0 terms; LLVM
+under Apache-2.0 with LLVM exceptions; QEMU under GPL-2.0 and component-specific
+licenses; OpenSBI under BSD-2-Clause; GNU binutils/GCC under their GNU licenses
+and runtime exceptions. Python, pytest and Ubuntu packages retain their own
+upstream licenses. Retained input URLs and cryptographic hashes are recorded
+in toolchain.lock and the locked container/bootstrap inputs. Consult each
+downloaded source tree's LICENSE/COPYING files before redistributing binaries.
+
+crates/platform/tests/fixtures/virt-qemu-11.1.3.dtb is a synthetic QEMU virt
+machine description generated locally, with random seed bytes cleared. It
+contains no user data. Disk images and test records are generated separately
+and excluded from the source archive.

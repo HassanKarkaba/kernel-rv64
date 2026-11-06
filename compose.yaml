@@ -1,0 +1,15 @@
+services:
+  kernel-dev:
+    build:
+      context: .
+      dockerfile: containers/Dockerfile
+    image: kernel-rv64-dev:local
+    init: true
+    stdin_open: true
+    tty: true
+    network_mode: none
+    volumes:
+      - kernel-evidence:/evidence
+    # Source is copied into the image; no source bind mount is used for reconstruction.
+volumes:
+  kernel-evidence:

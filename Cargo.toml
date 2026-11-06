@@ -1,0 +1,20 @@
+[workspace]
+resolver = "3"
+members = ["crates/abi", "crates/core-model", "crates/disk-format", "crates/platform", "crates/heap", "crates/filesystem", "kernel", "user/runtime", "user/programs"]
+default-members = ["crates/abi", "crates/core-model", "crates/disk-format", "crates/platform", "crates/heap", "crates/filesystem"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+lto = true
+codegen-units = 1
+debug = 2
+overflow-checks = true
+

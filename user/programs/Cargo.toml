@@ -1,0 +1,76 @@
+[package]
+name = "user-programs"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+build = "build.rs"
+
+[dependencies]
+user-runtime = { path = "../runtime" }
+kernel-core = { path = "../../crates/core-model" }
+
+[[bin]]
+name = "init"
+path = "src/bin/init.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "demo3"
+path = "src/bin/demo3.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "compute"
+path = "src/bin/compute.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "writer"
+path = "src/bin/writer.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "fault"
+path = "src/bin/fault.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "producer"
+path = "src/bin/producer.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "consumer"
+path = "src/bin/consumer.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "selftest"
+path = "src/bin/selftest.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "test-init"
+path = "src/bin/test-init.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "bench-init"
+path = "src/bin/bench-init.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "bench-worker"
+path = "src/bin/bench-worker.rs"
+test = false
+bench = false
